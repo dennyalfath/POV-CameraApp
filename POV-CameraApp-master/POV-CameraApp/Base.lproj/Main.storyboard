@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CameraView" customModule="POV_CameraApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Test" translatesAutoresizingMaskIntoConstraints="NO" id="cup-VV-alR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utp-Ur-mP5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73g-li-vbU">
+                                        <rect key="frame" x="10" y="50" width="22" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="GY1-HL-6wb"/>
+                                            <constraint firstAttribute="height" constant="24" id="Kfm-in-IeG"/>
+                                        </constraints>
+                                        <state key="normal" image="FlashOff"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRh-dE-1f6">
+                                        <rect key="frame" x="42" y="50" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="8zk-kq-qFb"/>
+                                            <constraint firstAttribute="height" constant="24" id="Hvi-Bx-F8D"/>
+                                        </constraints>
+                                        <state key="normal" image="GridOff"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnW-WT-4z0">
+                                        <rect key="frame" x="76" y="49" width="28" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="28" id="H7C-VH-kUB"/>
+                                            <constraint firstAttribute="height" constant="28" id="udd-mM-wOw"/>
+                                        </constraints>
+                                        <state key="normal" image="Ratio"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7T-Ej-cFV">
+                                        <rect key="frame" x="378" y="50" width="26" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="26" id="TOc-u2-To0"/>
+                                            <constraint firstAttribute="height" constant="26" id="zdh-Qu-W5T"/>
+                                        </constraints>
+                                        <state key="normal" image="Info"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="gnW-WT-4z0" firstAttribute="top" secondItem="utp-Ur-mP5" secondAttribute="top" constant="49" id="3aB-4G-mqE"/>
+                                    <constraint firstAttribute="height" constant="130" id="78k-ef-VUN"/>
+                                    <constraint firstItem="rRh-dE-1f6" firstAttribute="leading" secondItem="73g-li-vbU" secondAttribute="trailing" constant="10" id="An5-I2-iyA"/>
+                                    <constraint firstItem="73g-li-vbU" firstAttribute="top" secondItem="utp-Ur-mP5" secondAttribute="top" constant="50" id="Do8-Or-8cg"/>
+                                    <constraint firstItem="gnW-WT-4z0" firstAttribute="leading" secondItem="rRh-dE-1f6" secondAttribute="trailing" constant="10" id="Jbz-RH-xP1"/>
+                                    <constraint firstItem="J7T-Ej-cFV" firstAttribute="top" secondItem="utp-Ur-mP5" secondAttribute="top" constant="50" id="R7W-Kj-Spm"/>
+                                    <constraint firstItem="gnW-WT-4z0" firstAttribute="leading" secondItem="rRh-dE-1f6" secondAttribute="trailing" constant="10" id="SY5-oa-Tkf"/>
+                                    <constraint firstAttribute="trailing" secondItem="J7T-Ej-cFV" secondAttribute="trailing" constant="10" id="TAP-MV-lLq"/>
+                                    <constraint firstItem="rRh-dE-1f6" firstAttribute="top" secondItem="utp-Ur-mP5" secondAttribute="top" constant="50" id="fKs-9j-sNA"/>
+                                    <constraint firstItem="rRh-dE-1f6" firstAttribute="leading" secondItem="73g-li-vbU" secondAttribute="trailing" constant="10" id="n6h-s9-1RY"/>
+                                    <constraint firstItem="73g-li-vbU" firstAttribute="leading" secondItem="utp-Ur-mP5" secondAttribute="leading" constant="10" id="opY-cj-OSl"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAx-Gb-C2T">
+                                <rect key="frame" x="188.66666666666666" y="639" width="37" height="37"/>
+                                <state key="normal" image="Zoom1x"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5z-ZH-MUC">
+                                <rect key="frame" x="0.0" y="696" width="414" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fI-0y-ejZ">
+                                        <rect key="frame" x="20" y="72" width="49" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="DIt-Ke-jd1"/>
+                                            <constraint firstAttribute="width" constant="49" id="YVP-Kp-xQ5"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="49" id="vUz-HK-buP"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="49" id="yZ5-7G-7og"/>
+                                        </constraints>
+                                        <state key="normal" image="photo" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ie6-7C-0bA">
+                                        <rect key="frame" x="172" y="60" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="Vlg-L7-g0T"/>
+                                            <constraint firstAttribute="height" constant="70" id="qGv-wq-6At"/>
+                                        </constraints>
+                                        <state key="normal" image="Shutter"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66p-Hd-HkT">
+                                        <rect key="frame" x="356" y="82" width="38" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="Esz-OK-hWH"/>
+                                            <constraint firstAttribute="width" constant="38" id="sED-2Q-UrQ"/>
+                                        </constraints>
+                                        <state key="normal" image="Rotate"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ie6-7C-0bA" firstAttribute="top" secondItem="G5z-ZH-MUC" secondAttribute="top" constant="60" id="DcY-Gd-kCy"/>
+                                    <constraint firstItem="4fI-0y-ejZ" firstAttribute="top" secondItem="G5z-ZH-MUC" secondAttribute="top" constant="72" id="L4i-Df-TwG"/>
+                                    <constraint firstItem="4fI-0y-ejZ" firstAttribute="leading" secondItem="G5z-ZH-MUC" secondAttribute="leading" constant="20" id="Led-Jb-xnK"/>
+                                    <constraint firstItem="66p-Hd-HkT" firstAttribute="top" secondItem="G5z-ZH-MUC" secondAttribute="top" constant="82" id="PHp-v7-V95"/>
+                                    <constraint firstAttribute="height" constant="200" id="RZU-dS-s9q"/>
+                                    <constraint firstAttribute="trailing" secondItem="66p-Hd-HkT" secondAttribute="trailing" constant="20" id="cWo-ES-Xxs"/>
+                                    <constraint firstItem="ie6-7C-0bA" firstAttribute="centerX" secondItem="G5z-ZH-MUC" secondAttribute="centerX" id="rhb-HU-AKt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="cup-VV-alR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1Sl-sx-PIX"/>
+                            <constraint firstItem="G5z-ZH-MUC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2L2-pv-6NW"/>
+                            <constraint firstAttribute="trailing" secondItem="cup-VV-alR" secondAttribute="trailing" id="8G3-Ef-SUL"/>
+                            <constraint firstItem="G5z-ZH-MUC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ip8-Zu-Ypj"/>
+                            <constraint firstItem="G5z-ZH-MUC" firstAttribute="top" secondItem="GAx-Gb-C2T" secondAttribute="bottom" constant="20" id="KET-0g-pnb"/>
+                            <constraint firstItem="cup-VV-alR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LJj-RO-Y29"/>
+                            <constraint firstItem="cup-VV-alR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LyH-AT-kDH"/>
+                            <constraint firstAttribute="trailing" secondItem="G5z-ZH-MUC" secondAttribute="trailing" id="SxR-XO-ye5"/>
+                            <constraint firstAttribute="trailing" secondItem="utp-Ur-mP5" secondAttribute="trailing" id="Yns-II-rY9"/>
+                            <constraint firstItem="GAx-Gb-C2T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b4v-T0-IwD"/>
+                            <constraint firstItem="cup-VV-alR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mia-U6-RuF"/>
+                            <constraint firstItem="utp-Ur-mP5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="muP-DK-z6B"/>
+                            <constraint firstAttribute="bottom" secondItem="cup-VV-alR" secondAttribute="bottom" id="nll-ZU-7bI"/>
+                            <constraint firstItem="utp-Ur-mP5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r80-DU-kgQ"/>
+                            <constraint firstAttribute="bottom" secondItem="G5z-ZH-MUC" secondAttribute="bottom" id="rmo-NV-BZw"/>
+                            <constraint firstItem="utp-Ur-mP5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yWV-75-vCu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="CameraButton" destination="ie6-7C-0bA" id="kcG-Bf-TI6"/>
+                        <outlet property="Gallery" destination="4fI-0y-ejZ" id="EDC-kG-qFW"/>
+                        <outlet property="bottomView" destination="G5z-ZH-MUC" id="JIH-Zp-VNV"/>
+                        <outlet property="flash" destination="73g-li-vbU" id="eMm-lB-UQt"/>
+                        <outlet property="grid" destination="rRh-dE-1f6" id="hiN-9S-YfZ"/>
+                        <outlet property="info" destination="J7T-Ej-cFV" id="hQM-Va-OGv"/>
+                        <outlet property="ratio" destination="gnW-WT-4z0" id="b28-3g-gKg"/>
+                        <outlet property="switchCamera" destination="66p-Hd-HkT" id="v7N-lU-xDa"/>
+                        <outlet property="upperView" destination="utp-Ur-mP5" id="NDa-vg-wUA"/>
+                        <outlet property="zoom" destination="GAx-Gb-C2T" id="lUG-qY-MTm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FlashOff" width="28" height="28"/>
+        <image name="GridOff" width="28" height="28"/>
+        <image name="Info" width="28" height="28"/>
+        <image name="Ratio" width="28" height="28"/>
+        <image name="Rotate" width="38" height="29"/>
+        <image name="Shutter" width="72" height="72"/>
+        <image name="Test" width="49" height="49"/>
+        <image name="Zoom1x" width="37" height="37"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
+    </resources>
+</document>
