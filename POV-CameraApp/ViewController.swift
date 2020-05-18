@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     var previewLayer = AVCaptureVideoPreviewLayer()
     var frontCamera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front)
     var backCamera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
+    var capturePhotoOutput: AVCapturePhotoOutput?
     
     override var prefersStatusBarHidden: Bool {
         return true
@@ -27,7 +28,8 @@ class ViewController: UIViewController {
         
         if #available(iOS 13.4, *) {
             let captureDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
-            do {
+            do
+            {
                 let input = try AVCaptureDeviceInput(device: captureDevice!)
                 captureSession = AVCaptureSession()
                 captureSession.addInput(input)
@@ -35,13 +37,27 @@ class ViewController: UIViewController {
                 previewLayer.frame = view.layer.bounds
                 cameraView.layer.addSublayer(previewLayer)
                 captureSession.startRunning()
-            } catch {
-                print("error")
             }
+            catch
+                {
+                    print("error")
+                }
         }
+        
+        capturePhotoOutput = AVCapturePhotoOutput()
+        capturePhotoOutput?.isHighResolutionCaptureEnabled = true
+        captureSession.addOutput(capturePhotoOutput!)
+        
     }
     
-    @IBAction func imageCapture(_ sender: Any) {
+    @IBAction func imageCapture(_ sender: Any)
+    {
+        guard let capturePhotoOutput = self.capturePhotoOutput else { return }
+        let photoSettings = AVCapturePhotoSettings()
+        photoSettings.isAutoStillImageStabilizationEnabled = true
+        photoSettings.isHighResolutionPhotoEnabled = true
+        capturePhotoOutput.capturePhoto(with: photoSettings, delegate: self)
+        
     }
     
     func switchToFrontCamera() {
@@ -96,4 +112,24 @@ class ViewController: UIViewController {
     }
     
 }
+
+extension ViewController : AVCapturePhotoCaptureDelegate
+    {
+    func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photoSampleBuffer: CMSampleBuffer?,
+                     previewPhoto previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings,
+                     bracketSettings backetSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
+                            guard error == nil,
+                                let photoSampleBuffer = photoSampleBuffer else {
+                                    print("Error")
+                                    return
+                                }
+                            guard let imageData = AVCapturePhotoOutput.jpegPhotoDataRepresentation(forJPEGSampleBuffer: photoSampleBuffer, previewPhotoSampleBuffer: previewPhotoSampleBuffer) else {
+                                        return
+                                }
+                            let capturedImage = UIImage.init(data: imageData, scale: 1.0)
+                            if let image = capturedImage {
+                                UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+                            }
+                        }
+    }
 
