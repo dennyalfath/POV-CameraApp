@@ -1,19 +1,15 @@
 //
-//  GoldenTriangleVC.swift
+//  GTExampleVC.swift
 //  POV-CameraApp
 //
-//  Created by Denny Alfath on 15/05/20.
+//  Created by Denny Alfath on 26/05/20.
 //  Copyright © 2020 Denny Alfath. All rights reserved.
 //
 
 import UIKit
 
-class GoldenTriangleVC: UIViewController {
+class GTExampleVC: UIViewController {
 
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

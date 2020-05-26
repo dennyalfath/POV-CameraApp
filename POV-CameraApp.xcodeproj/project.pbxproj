@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		241B7E4E246E3B1C00267E6B /* GoldenTriangleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B7E4D246E3B1C00267E6B /* GoldenTriangleVC.swift */; };
+		243D7DB1247CBD510035CF57 /* GTDefinitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243D7DB0247CBD510035CF57 /* GTDefinitionVC.swift */; };
+		243D7DB3247CBD650035CF57 /* GTHowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243D7DB2247CBD650035CF57 /* GTHowVC.swift */; };
+		243D7DB5247CBD710035CF57 /* GTExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243D7DB4247CBD710035CF57 /* GTExampleVC.swift */; };
 		244C997324684995009E5355 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C997224684995009E5355 /* AppDelegate.swift */; };
 		244C997524684995009E5355 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C997424684995009E5355 /* SceneDelegate.swift */; };
 		244C997724684995009E5355 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C997624684995009E5355 /* ViewController.swift */; };
@@ -16,6 +19,7 @@
 		244C997F24684996009E5355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244C997D24684996009E5355 /* LaunchScreen.storyboard */; };
 		244C998A24684996009E5355 /* POV_CameraAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C998924684996009E5355 /* POV_CameraAppTests.swift */; };
 		244C999524684996009E5355 /* POV_CameraAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C999424684996009E5355 /* POV_CameraAppUITests.swift */; };
+		24C58A0B247264A7008091FC /* GoldenTriangle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C58A0A247264A7008091FC /* GoldenTriangle.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		241B7E4D246E3B1C00267E6B /* GoldenTriangleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldenTriangleVC.swift; sourceTree = "<group>"; };
+		243D7DB0247CBD510035CF57 /* GTDefinitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTDefinitionVC.swift; sourceTree = "<group>"; };
+		243D7DB2247CBD650035CF57 /* GTHowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTHowVC.swift; sourceTree = "<group>"; };
+		243D7DB4247CBD710035CF57 /* GTExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTExampleVC.swift; sourceTree = "<group>"; };
 		244C996F24684995009E5355 /* POV-CameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "POV-CameraApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		244C997224684995009E5355 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		244C997424684995009E5355 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +58,7 @@
 		244C999024684996009E5355 /* POV-CameraAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "POV-CameraAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		244C999424684996009E5355 /* POV_CameraAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POV_CameraAppUITests.swift; sourceTree = "<group>"; };
 		244C999624684996009E5355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24C58A0A247264A7008091FC /* GoldenTriangle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoldenTriangle.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		244C997124684995009E5355 /* POV-CameraApp */ = {
 			isa = PBXGroup;
 			children = (
+				24B232A02475096000B0B175 /* GoldenTriangle */,
 				244C997224684995009E5355 /* AppDelegate.swift */,
 				244C997424684995009E5355 /* SceneDelegate.swift */,
 				244C997624684995009E5355 /* ViewController.swift */,
@@ -108,7 +117,6 @@
 				244C997B24684996009E5355 /* Assets.xcassets */,
 				244C997D24684996009E5355 /* LaunchScreen.storyboard */,
 				244C998024684996009E5355 /* Info.plist */,
-				241B7E4D246E3B1C00267E6B /* GoldenTriangleVC.swift */,
 			);
 			path = "POV-CameraApp";
 			sourceTree = "<group>";
@@ -129,6 +137,18 @@
 				244C999624684996009E5355 /* Info.plist */,
 			);
 			path = "POV-CameraAppUITests";
+			sourceTree = "<group>";
+		};
+		24B232A02475096000B0B175 /* GoldenTriangle */ = {
+			isa = PBXGroup;
+			children = (
+				24C58A0A247264A7008091FC /* GoldenTriangle.storyboard */,
+				241B7E4D246E3B1C00267E6B /* GoldenTriangleVC.swift */,
+				243D7DB0247CBD510035CF57 /* GTDefinitionVC.swift */,
+				243D7DB2247CBD650035CF57 /* GTHowVC.swift */,
+				243D7DB4247CBD710035CF57 /* GTExampleVC.swift */,
+			);
+			path = GoldenTriangle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +258,7 @@
 				244C997F24684996009E5355 /* LaunchScreen.storyboard in Resources */,
 				244C997C24684996009E5355 /* Assets.xcassets in Resources */,
 				244C997A24684995009E5355 /* Main.storyboard in Resources */,
+				24C58A0B247264A7008091FC /* GoldenTriangle.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				243D7DB1247CBD510035CF57 /* GTDefinitionVC.swift in Sources */,
 				244C997724684995009E5355 /* ViewController.swift in Sources */,
+				243D7DB3247CBD650035CF57 /* GTHowVC.swift in Sources */,
+				243D7DB5247CBD710035CF57 /* GTExampleVC.swift in Sources */,
 				241B7E4E246E3B1C00267E6B /* GoldenTriangleVC.swift in Sources */,
 				244C997324684995009E5355 /* AppDelegate.swift in Sources */,
 				244C997524684995009E5355 /* SceneDelegate.swift in Sources */,
@@ -439,7 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7BB8YZ4KXC;
+				DEVELOPMENT_TEAM = 88F3B7HV75;
 				INFOPLIST_FILE = "POV-CameraApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,7 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7BB8YZ4KXC;
+				DEVELOPMENT_TEAM = 88F3B7HV75;
 				INFOPLIST_FILE = "POV-CameraApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

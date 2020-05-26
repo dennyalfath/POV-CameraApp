@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3as-4b-Xas">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Golden Triangle-->
+        <scene sceneID="0M1-W7-TIs">
+            <objects>
+                <viewController storyboardIdentifier="goldentrianglesb" id="3as-4b-Xas" customClass="GoldenTriangleVC" customModule="POV_CameraApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wf5-LO-see">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoldenTriangleImg" translatesAutoresizingMaskIntoConstraints="NO" id="bkL-Le-o2J">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="Iyl-xP-qrF"/>
+                                </constraints>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="reF-Xd-dxf" userLabel="Definition Container View">
+                                <rect key="frame" x="0.0" y="286" width="414" height="610"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="610" id="nxu-8H-0GT"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="T02-R1-CcW" kind="embed" id="S29-gZ-LY9"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="woi-X0-0c2" userLabel="How Container View">
+                                <rect key="frame" x="0.0" y="286" width="414" height="604"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="604" id="7Fn-ev-q4F"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="pCz-xe-Q0x" kind="embed" id="uGS-0i-s3B"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tgE-md-Wj2" userLabel="Example Container View">
+                                <rect key="frame" x="0.0" y="286" width="414" height="604"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="604" id="QmC-LL-XUk"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="8OB-EL-fKs" kind="embed" id="fU2-x1-vYR"/>
+                                </connections>
+                            </containerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Fzx-XI-fJF">
+                                <rect key="frame" x="20" y="235" width="374" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Noz-Xi-wQY"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Definition"/>
+                                    <segment title="How"/>
+                                    <segment title="Example"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didTapSegment:" destination="3as-4b-Xas" eventType="valueChanged" id="Thh-TV-TrC"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="reF-Xd-dxf" firstAttribute="top" secondItem="Fzx-XI-fJF" secondAttribute="bottom" constant="20" id="0Cl-QR-wBH"/>
+                            <constraint firstItem="Fzx-XI-fJF" firstAttribute="top" secondItem="bkL-Le-o2J" secondAttribute="bottom" constant="20" id="4h0-JF-p7u"/>
+                            <constraint firstItem="woi-X0-0c2" firstAttribute="trailing" secondItem="8Qq-mP-wMb" secondAttribute="trailing" id="9Sx-gT-lts"/>
+                            <constraint firstItem="bkL-Le-o2J" firstAttribute="leading" secondItem="8Qq-mP-wMb" secondAttribute="leading" id="C69-aK-ECY"/>
+                            <constraint firstItem="woi-X0-0c2" firstAttribute="leading" secondItem="8Qq-mP-wMb" secondAttribute="leading" id="KU4-yZ-Zrq"/>
+                            <constraint firstItem="woi-X0-0c2" firstAttribute="top" secondItem="Fzx-XI-fJF" secondAttribute="bottom" constant="20" id="TFI-uv-ENc"/>
+                            <constraint firstItem="tgE-md-Wj2" firstAttribute="trailing" secondItem="8Qq-mP-wMb" secondAttribute="trailing" id="d2c-4h-vyZ"/>
+                            <constraint firstItem="Fzx-XI-fJF" firstAttribute="leading" secondItem="8Qq-mP-wMb" secondAttribute="leading" constant="20" id="eTO-eY-rHw"/>
+                            <constraint firstItem="bkL-Le-o2J" firstAttribute="trailing" secondItem="8Qq-mP-wMb" secondAttribute="trailing" id="edg-ae-Ai2"/>
+                            <constraint firstItem="bkL-Le-o2J" firstAttribute="top" secondItem="wf5-LO-see" secondAttribute="top" id="hKL-UD-4Qs"/>
+                            <constraint firstItem="reF-Xd-dxf" firstAttribute="trailing" secondItem="8Qq-mP-wMb" secondAttribute="trailing" id="m8H-MO-SMK"/>
+                            <constraint firstItem="reF-Xd-dxf" firstAttribute="leading" secondItem="8Qq-mP-wMb" secondAttribute="leading" id="tyv-YN-eDn"/>
+                            <constraint firstItem="tgE-md-Wj2" firstAttribute="leading" secondItem="8Qq-mP-wMb" secondAttribute="leading" id="u3w-k4-Dvm"/>
+                            <constraint firstItem="tgE-md-Wj2" firstAttribute="top" secondItem="Fzx-XI-fJF" secondAttribute="bottom" constant="20" id="uk8-7K-1b4"/>
+                            <constraint firstItem="8Qq-mP-wMb" firstAttribute="trailing" secondItem="Fzx-XI-fJF" secondAttribute="trailing" constant="20" id="yEQ-gZ-Rwd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Qq-mP-wMb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Golden Triangle" id="RKd-xF-FHU"/>
+                    <connections>
+                        <outlet property="defVC" destination="reF-Xd-dxf" id="UXl-oQ-gcQ"/>
+                        <outlet property="exampleVC" destination="tgE-md-Wj2" id="lXH-Au-qec"/>
+                        <outlet property="howVC" destination="woi-X0-0c2" id="C95-CZ-pz4"/>
+                        <outlet property="segmentedControl" destination="Fzx-XI-fJF" id="Lae-lL-B0a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DOZ-F3-L0O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1181.1594202898552" y="171.42857142857142"/>
+        </scene>
+        <!--Definition View Controller-->
+        <scene sceneID="duT-Ad-I7X">
+            <objects>
+                <viewController id="T02-R1-CcW" userLabel="Definition View Controller" customClass="GTDefinitionVC" customModule="POV_CameraApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AFg-ZA-4HX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="610"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="MX1-CH-9fl">
+                                <rect key="frame" x="20" y="0.0" width="374" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">The Golden Triangle rule is a rule of thumb in visual composition for photographs or paintings, especially those which have elements that follow diagonal lines.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GoldenTriangleOV" translatesAutoresizingMaskIntoConstraints="NO" id="7Q5-I8-B62">
+                                <rect key="frame" x="20" y="84" width="374" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="7jJ-bY-zyc">
+                                <rect key="frame" x="20" y="321" width="374" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">The frame is divided into four triangles of two different sizes, done by drawing one diagonal from one corner to another, and then two lines from the other corners, touching the first at 90 degree angles.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="63t-dP-R5T"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ORq-oh-QUg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1886" y="880"/>
+        </scene>
+        <!--How View Controller-->
+        <scene sceneID="yQl-hO-VMx">
+            <objects>
+                <viewController id="pCz-xe-Q0x" userLabel="How View Controller" customClass="GTHowVC" customModule="POV_CameraApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SLw-Ng-UuG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="604"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="1. Filling one of the triangles with the  subject" translatesAutoresizingMaskIntoConstraints="NO" id="Cbp-wg-gVZ">
+                                <rect key="frame" x="20" y="0.0" width="374" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GTHow1" translatesAutoresizingMaskIntoConstraints="NO" id="SqM-a1-gWR">
+                                <rect key="frame" x="20" y="45" width="374" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UJM-Le-5Fb">
+                                <rect key="frame" x="20" y="242" width="374" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">2. Placing the diagonal elements so that they  run along two of the lines
+</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GTHow2" translatesAutoresizingMaskIntoConstraints="NO" id="6p3-lF-1It">
+                                <rect key="frame" x="20" y="311" width="374" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5wy-7n-eQf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aFB-2c-jnj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479.71014492753625" y="881.91964285714278"/>
+        </scene>
+        <!--Example View Controller-->
+        <scene sceneID="AKP-ZS-aUH">
+            <objects>
+                <viewController id="8OB-EL-fKs" userLabel="Example View Controller" customClass="GTExampleVC" customModule="POV_CameraApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mKl-mW-STB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="604"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yUy-O8-sJt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ge-m5-nXS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1181" y="882"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GTHow1" width="238" height="164"/>
+        <image name="GTHow2" width="238" height="164"/>
+        <image name="GoldenTriangleImg" width="414" height="276"/>
+        <image name="GoldenTriangleOV" width="270" height="180"/>
+    </resources>
+</document>

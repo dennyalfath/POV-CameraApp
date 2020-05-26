@@ -111,25 +111,30 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func showInfo(_ sender: UIButton) {
+        
+    }
+    
+    
 }
 
 extension ViewController : AVCapturePhotoCaptureDelegate
-    {
-    func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photoSampleBuffer: CMSampleBuffer?,
-                     previewPhoto previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings,
-                     bracketSettings backetSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
-                            guard error == nil,
-                                let photoSampleBuffer = photoSampleBuffer else {
-                                    print("Error")
-                                    return
-                                }
-                            guard let imageData = AVCapturePhotoOutput.jpegPhotoDataRepresentation(forJPEGSampleBuffer: photoSampleBuffer, previewPhotoSampleBuffer: previewPhotoSampleBuffer) else {
-                                        return
-                                }
-                            let capturedImage = UIImage.init(data: imageData, scale: 1.0)
-                            if let image = capturedImage {
-                                UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+{
+func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photoSampleBuffer: CMSampleBuffer?,
+                 previewPhoto previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings,
+                 bracketSettings backetSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
+                        guard error == nil,
+                            let photoSampleBuffer = photoSampleBuffer else {
+                                print("Error")
+                                return
                             }
+                        guard let imageData = AVCapturePhotoOutput.jpegPhotoDataRepresentation(forJPEGSampleBuffer: photoSampleBuffer, previewPhotoSampleBuffer: previewPhotoSampleBuffer) else {
+                                    return
+                            }
+                        let capturedImage = UIImage.init(data: imageData, scale: 1.0)
+                        if let image = capturedImage {
+                            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
                         }
-    }
+                    }
+}
 
