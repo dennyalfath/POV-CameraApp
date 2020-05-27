@@ -19,6 +19,13 @@
 		244C997F24684996009E5355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244C997D24684996009E5355 /* LaunchScreen.storyboard */; };
 		244C998A24684996009E5355 /* POV_CameraAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C998924684996009E5355 /* POV_CameraAppTests.swift */; };
 		244C999524684996009E5355 /* POV_CameraAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C999424684996009E5355 /* POV_CameraAppUITests.swift */; };
+		248857E0247E1AAC00295B9C /* FibonacciSpiral.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248857DF247E1AAC00295B9C /* FibonacciSpiral.storyboard */; };
+		248857E2247E1C4600295B9C /* FibonacciSpiralVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248857E1247E1C4600295B9C /* FibonacciSpiralVC.swift */; };
+		248857E4247E1FF500295B9C /* FSDefinitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248857E3247E1FF500295B9C /* FSDefinitionVC.swift */; };
+		248857E6247E200800295B9C /* FSHowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248857E5247E200800295B9C /* FSHowVC.swift */; };
+		248857E8247E201700295B9C /* FSExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248857E7247E201700295B9C /* FSExampleVC.swift */; };
+		248857EB247E25C900295B9C /* RuleOfThird.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248857EA247E25C900295B9C /* RuleOfThird.storyboard */; };
+		248857ED247E28B500295B9C /* RuleOfThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248857EC247E28B500295B9C /* RuleOfThirdVC.swift */; };
 		24C58A0B247264A7008091FC /* GoldenTriangle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C58A0A247264A7008091FC /* GoldenTriangle.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +65,13 @@
 		244C999024684996009E5355 /* POV-CameraAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "POV-CameraAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		244C999424684996009E5355 /* POV_CameraAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POV_CameraAppUITests.swift; sourceTree = "<group>"; };
 		244C999624684996009E5355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		248857DF247E1AAC00295B9C /* FibonacciSpiral.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FibonacciSpiral.storyboard; sourceTree = "<group>"; };
+		248857E1247E1C4600295B9C /* FibonacciSpiralVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciSpiralVC.swift; sourceTree = "<group>"; };
+		248857E3247E1FF500295B9C /* FSDefinitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSDefinitionVC.swift; sourceTree = "<group>"; };
+		248857E5247E200800295B9C /* FSHowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSHowVC.swift; sourceTree = "<group>"; };
+		248857E7247E201700295B9C /* FSExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSExampleVC.swift; sourceTree = "<group>"; };
+		248857EA247E25C900295B9C /* RuleOfThird.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RuleOfThird.storyboard; sourceTree = "<group>"; };
+		248857EC247E28B500295B9C /* RuleOfThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleOfThirdVC.swift; sourceTree = "<group>"; };
 		24C58A0A247264A7008091FC /* GoldenTriangle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoldenTriangle.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +123,8 @@
 		244C997124684995009E5355 /* POV-CameraApp */ = {
 			isa = PBXGroup;
 			children = (
+				248857E9247E25B700295B9C /* RuleOfThird */,
+				248857DE247E1A8F00295B9C /* FibonacciSpiral */,
 				24B232A02475096000B0B175 /* GoldenTriangle */,
 				244C997224684995009E5355 /* AppDelegate.swift */,
 				244C997424684995009E5355 /* SceneDelegate.swift */,
@@ -137,6 +153,27 @@
 				244C999624684996009E5355 /* Info.plist */,
 			);
 			path = "POV-CameraAppUITests";
+			sourceTree = "<group>";
+		};
+		248857DE247E1A8F00295B9C /* FibonacciSpiral */ = {
+			isa = PBXGroup;
+			children = (
+				248857DF247E1AAC00295B9C /* FibonacciSpiral.storyboard */,
+				248857E1247E1C4600295B9C /* FibonacciSpiralVC.swift */,
+				248857E3247E1FF500295B9C /* FSDefinitionVC.swift */,
+				248857E5247E200800295B9C /* FSHowVC.swift */,
+				248857E7247E201700295B9C /* FSExampleVC.swift */,
+			);
+			path = FibonacciSpiral;
+			sourceTree = "<group>";
+		};
+		248857E9247E25B700295B9C /* RuleOfThird */ = {
+			isa = PBXGroup;
+			children = (
+				248857EA247E25C900295B9C /* RuleOfThird.storyboard */,
+				248857EC247E28B500295B9C /* RuleOfThirdVC.swift */,
+			);
+			path = RuleOfThird;
 			sourceTree = "<group>";
 		};
 		24B232A02475096000B0B175 /* GoldenTriangle */ = {
@@ -255,10 +292,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				248857E0247E1AAC00295B9C /* FibonacciSpiral.storyboard in Resources */,
 				244C997F24684996009E5355 /* LaunchScreen.storyboard in Resources */,
 				244C997C24684996009E5355 /* Assets.xcassets in Resources */,
 				244C997A24684995009E5355 /* Main.storyboard in Resources */,
 				24C58A0B247264A7008091FC /* GoldenTriangle.storyboard in Resources */,
+				248857EB247E25C900295B9C /* RuleOfThird.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,10 +323,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				243D7DB1247CBD510035CF57 /* GTDefinitionVC.swift in Sources */,
+				248857E8247E201700295B9C /* FSExampleVC.swift in Sources */,
 				244C997724684995009E5355 /* ViewController.swift in Sources */,
 				243D7DB3247CBD650035CF57 /* GTHowVC.swift in Sources */,
 				243D7DB5247CBD710035CF57 /* GTExampleVC.swift in Sources */,
+				248857E6247E200800295B9C /* FSHowVC.swift in Sources */,
+				248857E2247E1C4600295B9C /* FibonacciSpiralVC.swift in Sources */,
+				248857ED247E28B500295B9C /* RuleOfThirdVC.swift in Sources */,
 				241B7E4E246E3B1C00267E6B /* GoldenTriangleVC.swift in Sources */,
+				248857E4247E1FF500295B9C /* FSDefinitionVC.swift in Sources */,
 				244C997324684995009E5355 /* AppDelegate.swift in Sources */,
 				244C997524684995009E5355 /* SceneDelegate.swift in Sources */,
 			);

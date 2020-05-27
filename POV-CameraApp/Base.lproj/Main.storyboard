@@ -75,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
-        <!--GoldenTriangle-->
+        <!--FibonacciSpiral-->
         <scene sceneID="n0R-UV-MvU">
             <objects>
-                <viewControllerPlaceholder storyboardName="GoldenTriangle" id="gB2-gm-cDb" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="FibonacciSpiral" id="gB2-gm-cDb" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="6dl-Ct-tTw"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w79-wv-cE0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
