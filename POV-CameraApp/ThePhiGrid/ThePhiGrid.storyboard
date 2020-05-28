@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0sX-1M-jRM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--The Phi Grid-->
+        <scene sceneID="rt8-Mh-X8h">
+            <objects>
+                <viewController storyboardIdentifier="ruleofthirdsb" id="0sX-1M-jRM" userLabel="The Phi Grid" customClass="ThePhiGridVC" customModule="POV_CameraApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l7A-9d-2Vo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PG1" translatesAutoresizingMaskIntoConstraints="NO" id="bOf-du-x5R">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="pD0-5e-Qqy"/>
+                                </constraints>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mkt-y3-YC0" userLabel="Definition Container View">
+                                <rect key="frame" x="0.0" y="286" width="414" height="610"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="610" id="j1V-JC-AwK"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="Nqh-UZ-50c" kind="embed" id="hv0-Rw-DDQ"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x92-99-uW4" userLabel="How Container View">
+                                <rect key="frame" x="0.0" y="286" width="414" height="604"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="604" id="T6C-qG-ZKD"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="1vv-uw-ng3" kind="embed" id="KDx-r2-tWS"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0X-MX-LV4" userLabel="Example Container View">
+                                <rect key="frame" x="0.0" y="286" width="414" height="604"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="604" id="rbN-HH-bDT"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="sfR-Yq-l5w" kind="embed" id="dWS-co-wFY"/>
+                                </connections>
+                            </containerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Hcf-eV-9eh">
+                                <rect key="frame" x="20" y="235" width="374" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Udl-wZ-Trf"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Definition"/>
+                                    <segment title="How"/>
+                                    <segment title="Example"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didTapSegment:" destination="0sX-1M-jRM" eventType="valueChanged" id="XfO-9k-hXl"/>
+                                </connections>
+                            </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The Phi Grid" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4MK-Xd-SOJ">
+                                <rect key="frame" x="120" y="10" width="174" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FyW-7g-Bna"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4MK-Xd-SOJ" firstAttribute="leading" secondItem="z8H-Pw-45I" secondAttribute="leading" constant="120" id="0Aa-my-Idv"/>
+                            <constraint firstItem="L0X-MX-LV4" firstAttribute="trailing" secondItem="z8H-Pw-45I" secondAttribute="trailing" id="1rf-ax-L34"/>
+                            <constraint firstItem="z8H-Pw-45I" firstAttribute="trailing" secondItem="Hcf-eV-9eh" secondAttribute="trailing" constant="20" id="BVq-Bs-Dl5"/>
+                            <constraint firstItem="x92-99-uW4" firstAttribute="top" secondItem="Hcf-eV-9eh" secondAttribute="bottom" constant="20" id="Fop-Z7-Y5W"/>
+                            <constraint firstItem="Hcf-eV-9eh" firstAttribute="leading" secondItem="z8H-Pw-45I" secondAttribute="leading" constant="20" id="H4G-u3-wtz"/>
+                            <constraint firstItem="bOf-du-x5R" firstAttribute="leading" secondItem="z8H-Pw-45I" secondAttribute="leading" id="HJh-Qz-T5P"/>
+                            <constraint firstItem="Hcf-eV-9eh" firstAttribute="top" secondItem="bOf-du-x5R" secondAttribute="bottom" constant="20" id="Rf9-0b-XPu"/>
+                            <constraint firstItem="4MK-Xd-SOJ" firstAttribute="top" secondItem="l7A-9d-2Vo" secondAttribute="top" constant="10" id="SFB-LV-HA6"/>
+                            <constraint firstItem="mkt-y3-YC0" firstAttribute="trailing" secondItem="z8H-Pw-45I" secondAttribute="trailing" id="Soe-TL-VKq"/>
+                            <constraint firstItem="mkt-y3-YC0" firstAttribute="leading" secondItem="z8H-Pw-45I" secondAttribute="leading" id="V8S-Z6-m7z"/>
+                            <constraint firstItem="z8H-Pw-45I" firstAttribute="trailing" secondItem="4MK-Xd-SOJ" secondAttribute="trailing" constant="120" id="Wcv-vB-zKN"/>
+                            <constraint firstItem="L0X-MX-LV4" firstAttribute="top" secondItem="Hcf-eV-9eh" secondAttribute="bottom" constant="20" id="ZRL-Rp-BgE"/>
+                            <constraint firstItem="mkt-y3-YC0" firstAttribute="top" secondItem="Hcf-eV-9eh" secondAttribute="bottom" constant="20" id="cu1-kF-M8H"/>
+                            <constraint firstItem="x92-99-uW4" firstAttribute="leading" secondItem="z8H-Pw-45I" secondAttribute="leading" id="dZR-OZ-FZj"/>
+                            <constraint firstItem="bOf-du-x5R" firstAttribute="trailing" secondItem="z8H-Pw-45I" secondAttribute="trailing" id="etB-Co-50Y"/>
+                            <constraint firstItem="L0X-MX-LV4" firstAttribute="leading" secondItem="z8H-Pw-45I" secondAttribute="leading" id="kmi-S2-sL0"/>
+                            <constraint firstItem="x92-99-uW4" firstAttribute="trailing" secondItem="z8H-Pw-45I" secondAttribute="trailing" id="q1v-Fs-Aeo"/>
+                            <constraint firstItem="bOf-du-x5R" firstAttribute="top" secondItem="l7A-9d-2Vo" secondAttribute="top" id="u1Z-NS-4wd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z8H-Pw-45I"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Golden Triangle" id="WgV-aM-pot"/>
+                    <connections>
+                        <outlet property="defVC" destination="mkt-y3-YC0" id="SQG-J6-OpJ"/>
+                        <outlet property="exampleVC" destination="L0X-MX-LV4" id="Qou-sV-Qxx"/>
+                        <outlet property="howVC" destination="x92-99-uW4" id="PV0-po-x5f"/>
+                        <outlet property="segmentedControl" destination="Hcf-eV-9eh" id="6s3-A8-kGr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OaP-iL-NcW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1181.1594202898552" y="171.42857142857142"/>
+        </scene>
+        <!--Definition View Controller-->
+        <scene sceneID="kfP-nn-f1z">
+            <objects>
+                <viewController id="Nqh-UZ-50c" userLabel="Definition View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uhu-3h-0Eb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="610"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Y3L-7B-KNT">
+                                <rect key="frame" x="20" y="0.0" width="374" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">The Phi Grid helps you visualize the Golden Ratio as a part of each image. It is based on a combination of smaller rectangles in a grid over an image, where four of the rectangles are based on the 1:1.618 ratio.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PGOV" translatesAutoresizingMaskIntoConstraints="NO" id="WqD-Q3-0PC">
+                                <rect key="frame" x="20" y="122" width="374" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fq3-ny-0d2">
+                                <rect key="frame" x="20" y="355" width="374" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">What you can see when using the Phi Grid is in the spaces where gridlines intersect. These so-called “sweet spots” are places where the eye is naturally drawn in an image. Cropping or aligning an image so that key parts fall in these areas will create focus and harmony.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gI7-Tu-29c"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7PB-bT-hOc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1885.5072463768117" y="879.91071428571422"/>
+        </scene>
+        <!--How View Controller-->
+        <scene sceneID="sEG-pM-Hsr">
+            <objects>
+                <viewController id="1vv-uw-ng3" userLabel="How View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EjI-hw-WhO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="604"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="1. Place the objects of interest near or at the intersections of any of the lines" translatesAutoresizingMaskIntoConstraints="NO" id="7x0-xS-GbN">
+                                <rect key="frame" x="20" y="0.0" width="374" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PG1" translatesAutoresizingMaskIntoConstraints="NO" id="ect-Ug-dd1">
+                                <rect key="frame" x="20" y="71" width="374" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PG2" translatesAutoresizingMaskIntoConstraints="NO" id="6Cn-MW-NWR">
+                                <rect key="frame" x="20" y="271" width="374" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ZGs-19-pDu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhP-LT-y99" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1182.608695652174" y="881.91964285714278"/>
+        </scene>
+        <!--Example View Controller-->
+        <scene sceneID="HaV-AN-jpw">
+            <objects>
+                <viewController id="sfR-Yq-l5w" userLabel="Example View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ali-3P-Pmd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="604"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PG3" translatesAutoresizingMaskIntoConstraints="NO" id="qU1-er-bS6">
+                                <rect key="frame" x="20" y="17" width="175" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PG4" translatesAutoresizingMaskIntoConstraints="NO" id="xjt-87-SCg">
+                                <rect key="frame" x="211" y="17" width="175" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PG5" translatesAutoresizingMaskIntoConstraints="NO" id="aFx-Jc-Ogt">
+                                <rect key="frame" x="20" y="155" width="175" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PG7" translatesAutoresizingMaskIntoConstraints="NO" id="o3b-rj-j0s">
+                                <rect key="frame" x="211" y="155" width="175" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PG8" translatesAutoresizingMaskIntoConstraints="NO" id="ldu-Pq-P1V">
+                                <rect key="frame" x="20" y="273" width="175" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PG6" translatesAutoresizingMaskIntoConstraints="NO" id="Pov-LQ-LwO">
+                                <rect key="frame" x="211" y="273" width="175" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oIy-mT-5sf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edz-Uj-efE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476.81159420289856" y="877.90178571428567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PG1" width="800" height="533"/>
+        <image name="PG2" width="688" height="466"/>
+        <image name="PG3" width="650" height="435"/>
+        <image name="PG4" width="715" height="477"/>
+        <image name="PG5" width="715" height="401"/>
+        <image name="PG6" width="715" height="477"/>
+        <image name="PG7" width="512" height="341"/>
+        <image name="PG8" width="512" height="214"/>
+        <image name="PGOV" width="729" height="483"/>
+    </resources>
+</document>

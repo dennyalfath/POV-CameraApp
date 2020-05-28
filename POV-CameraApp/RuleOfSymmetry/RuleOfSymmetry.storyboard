@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6se-dK-JKY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rule Of Symmetry-->
+        <scene sceneID="RYU-ED-6FJ">
+            <objects>
+                <viewController storyboardIdentifier="ruleofthirdsb" id="6se-dK-JKY" userLabel="Rule Of Symmetry" customClass="RuleOfSymmetryVC" customModule="POV_CameraApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vtH-UE-FPp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ROS4" translatesAutoresizingMaskIntoConstraints="NO" id="SKA-Xj-krV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="SA5-np-XWO"/>
+                                </constraints>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Li-cF-3WY" userLabel="Definition Container View">
+                                <rect key="frame" x="0.0" y="286" width="414" height="610"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="610" id="mVR-wV-5RI"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="st3-f1-nZd" kind="embed" id="E6a-PY-jUD"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ADk-IZ-N0s" userLabel="How Container View">
+                                <rect key="frame" x="0.0" y="286" width="414" height="604"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="604" id="Fkp-PZ-xpQ"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="AmM-ZA-inQ" kind="embed" id="aOC-ez-pZ4"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfg-Xu-1Tl" userLabel="Example Container View">
+                                <rect key="frame" x="0.0" y="286" width="414" height="604"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="604" id="fed-vG-3MT"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="6y7-qP-4wg" kind="embed" id="sc9-i5-K4H"/>
+                                </connections>
+                            </containerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="i6A-g6-wDo">
+                                <rect key="frame" x="20" y="235" width="374" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="2qv-Ag-Wrh"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Definition"/>
+                                    <segment title="How"/>
+                                    <segment title="Example"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didTapSegment:" destination="6se-dK-JKY" eventType="valueChanged" id="nlK-va-bhy"/>
+                                </connections>
+                            </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Rule Of Symmetry" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cKt-2m-9fv">
+                                <rect key="frame" x="120" y="10" width="201" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eRq-EC-Kwr"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="i6A-g6-wDo" firstAttribute="top" secondItem="SKA-Xj-krV" secondAttribute="bottom" constant="20" id="0OP-Vn-Svf"/>
+                            <constraint firstItem="i6A-g6-wDo" firstAttribute="leading" secondItem="06h-s7-Q6a" secondAttribute="leading" constant="20" id="19J-w4-a6W"/>
+                            <constraint firstItem="cKt-2m-9fv" firstAttribute="top" secondItem="vtH-UE-FPp" secondAttribute="top" constant="10" id="1Cc-No-l9b"/>
+                            <constraint firstItem="SKA-Xj-krV" firstAttribute="leading" secondItem="06h-s7-Q6a" secondAttribute="leading" id="32W-9c-8tN"/>
+                            <constraint firstItem="ADk-IZ-N0s" firstAttribute="trailing" secondItem="06h-s7-Q6a" secondAttribute="trailing" id="4IJ-0c-7oZ"/>
+                            <constraint firstItem="zfg-Xu-1Tl" firstAttribute="trailing" secondItem="06h-s7-Q6a" secondAttribute="trailing" id="KIV-Qq-yn4"/>
+                            <constraint firstItem="6Li-cF-3WY" firstAttribute="trailing" secondItem="06h-s7-Q6a" secondAttribute="trailing" id="Qb5-pQ-aT4"/>
+                            <constraint firstItem="06h-s7-Q6a" firstAttribute="trailing" secondItem="i6A-g6-wDo" secondAttribute="trailing" constant="20" id="Xp6-xJ-mkh"/>
+                            <constraint firstItem="SKA-Xj-krV" firstAttribute="trailing" secondItem="06h-s7-Q6a" secondAttribute="trailing" id="YHh-6X-UJj"/>
+                            <constraint firstItem="ADk-IZ-N0s" firstAttribute="leading" secondItem="06h-s7-Q6a" secondAttribute="leading" id="YnI-SF-HB4"/>
+                            <constraint firstItem="cKt-2m-9fv" firstAttribute="leading" secondItem="06h-s7-Q6a" secondAttribute="leading" constant="120" id="fUw-Tr-7Kf"/>
+                            <constraint firstItem="06h-s7-Q6a" firstAttribute="trailing" secondItem="cKt-2m-9fv" secondAttribute="trailing" constant="93" id="gT0-k5-FQY"/>
+                            <constraint firstItem="SKA-Xj-krV" firstAttribute="top" secondItem="vtH-UE-FPp" secondAttribute="top" id="jBm-Ik-xFd"/>
+                            <constraint firstItem="6Li-cF-3WY" firstAttribute="leading" secondItem="06h-s7-Q6a" secondAttribute="leading" id="nFa-to-Aso"/>
+                            <constraint firstItem="zfg-Xu-1Tl" firstAttribute="leading" secondItem="06h-s7-Q6a" secondAttribute="leading" id="qrU-kM-0Ne"/>
+                            <constraint firstItem="ADk-IZ-N0s" firstAttribute="top" secondItem="i6A-g6-wDo" secondAttribute="bottom" constant="20" id="rUY-4i-an8"/>
+                            <constraint firstItem="zfg-Xu-1Tl" firstAttribute="top" secondItem="i6A-g6-wDo" secondAttribute="bottom" constant="20" id="toj-mJ-MdY"/>
+                            <constraint firstItem="6Li-cF-3WY" firstAttribute="top" secondItem="i6A-g6-wDo" secondAttribute="bottom" constant="20" id="wwo-TE-eMk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="06h-s7-Q6a"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Golden Triangle" id="ZG2-SB-pQJ"/>
+                    <connections>
+                        <outlet property="defVC" destination="6Li-cF-3WY" id="oiN-rr-UqA"/>
+                        <outlet property="exampleVC" destination="zfg-Xu-1Tl" id="qXT-Us-v0d"/>
+                        <outlet property="howVC" destination="ADk-IZ-N0s" id="iy1-q5-HpN"/>
+                        <outlet property="segmentedControl" destination="i6A-g6-wDo" id="Kh7-4i-c3e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5fC-vt-80r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1181.1594202898552" y="171.42857142857142"/>
+        </scene>
+        <!--Definition View Controller-->
+        <scene sceneID="avO-Re-6LT">
+            <objects>
+                <viewController id="st3-f1-nZd" userLabel="Definition View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rnd-GR-GsU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="610"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="kCE-IJ-x5B">
+                                <rect key="frame" x="20" y="0.0" width="374" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Symmetry refers to a line that splits an object in half and, if both sides of the object are an exact mirror image of each other, then this object is said to be symmetrical. The line that splits a symmetrical object is called the line of symmetry. Symmetry is a powerful tool that lets you automatically create harmony and a sense of aesthetically pleasing balance and proportion in a photograph.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ROSOV" translatesAutoresizingMaskIntoConstraints="NO" id="FKb-xW-pDR">
+                                <rect key="frame" x="85" y="173" width="244" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="7m4-8x-1X7">
+                                <rect key="frame" x="20" y="365" width="374" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">1. Vertical Line of Symmetry (VLS): If an object’s line of symmetry is perpendicular to the horizon line, it has a vertical line of symmetry. 
+2. Horizontal Line of Symmetry (HLS): If an object’s line of symmetry is parallel to the horizon line, it has a horizontal line of symmetry.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7bj-AV-CH1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eyk-Kg-Y9x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1859" y="880"/>
+        </scene>
+        <!--How View Controller-->
+        <scene sceneID="g6c-er-cos">
+            <objects>
+                <viewController id="AmM-ZA-inQ" userLabel="How View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WSA-kc-Byw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="604"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="1. Take your imaginary line and place it horizontally or vertically at the centre of your composition" translatesAutoresizingMaskIntoConstraints="NO" id="FSJ-fS-ZP8">
+                                <rect key="frame" x="20" y="0.0" width="374" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="2. You can experiment with as many type of symmetry as you like. The common types are horizontal, vertical, and radial symmetry" translatesAutoresizingMaskIntoConstraints="NO" id="F6j-ZL-fg2">
+                                <rect key="frame" x="20" y="239" width="374" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ROS1" translatesAutoresizingMaskIntoConstraints="NO" id="joL-1Y-uRz">
+                                <rect key="frame" x="72" y="57" width="270" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ROS3" translatesAutoresizingMaskIntoConstraints="NO" id="b2M-eN-mWQ">
+                                <rect key="frame" x="72" y="318" width="126" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ROS5" translatesAutoresizingMaskIntoConstraints="NO" id="kgk-nJ-4VS">
+                                <rect key="frame" x="212" y="318" width="126" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="y1P-jx-TKE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j3E-gJ-yWw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1182.608695652174" y="877.90178571428567"/>
+        </scene>
+        <!--Example View Controller-->
+        <scene sceneID="RDx-bw-7h0">
+            <objects>
+                <viewController id="6y7-qP-4wg" userLabel="Example View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZH5-P3-D5c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="604"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ROS1" translatesAutoresizingMaskIntoConstraints="NO" id="bsT-8h-HOo">
+                                <rect key="frame" x="20" y="17" width="175" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ROS4" translatesAutoresizingMaskIntoConstraints="NO" id="4Uo-Bo-tcb">
+                                <rect key="frame" x="213" y="17" width="181" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ROS2" translatesAutoresizingMaskIntoConstraints="NO" id="Hvs-yU-Zb9">
+                                <rect key="frame" x="20" y="148" width="374" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="IaE-p1-aQY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uUq-IG-kds" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="519" y="878"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ROS1" width="256" height="171"/>
+        <image name="ROS2" width="256" height="165"/>
+        <image name="ROS3" width="170" height="256"/>
+        <image name="ROS4" width="256" height="192"/>
+        <image name="ROS5" width="205" height="256"/>
+        <image name="ROSOV" width="256" height="187"/>
+    </resources>
+</document>

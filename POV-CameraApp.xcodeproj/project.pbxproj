@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		240EC59D247F76A90079F0E4 /* RuleOfSymmetryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240EC59C247F76A90079F0E4 /* RuleOfSymmetryVC.swift */; };
 		241B7E4E246E3B1C00267E6B /* GoldenTriangleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B7E4D246E3B1C00267E6B /* GoldenTriangleVC.swift */; };
 		243D7DB1247CBD510035CF57 /* GTDefinitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243D7DB0247CBD510035CF57 /* GTDefinitionVC.swift */; };
 		243D7DB3247CBD650035CF57 /* GTHowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243D7DB2247CBD650035CF57 /* GTHowVC.swift */; };
@@ -19,6 +20,11 @@
 		244C997F24684996009E5355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244C997D24684996009E5355 /* LaunchScreen.storyboard */; };
 		244C998A24684996009E5355 /* POV_CameraAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C998924684996009E5355 /* POV_CameraAppTests.swift */; };
 		244C999524684996009E5355 /* POV_CameraAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C999424684996009E5355 /* POV_CameraAppUITests.swift */; };
+		246E39E9247F584300A85109 /* ThePhiGrid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246E39E8247F584300A85109 /* ThePhiGrid.storyboard */; };
+		246E39EB247F588400A85109 /* ThePhiGridVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246E39EA247F588400A85109 /* ThePhiGridVC.swift */; };
+		246E39EE247F6EFD00A85109 /* DiagonalRule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246E39ED247F6EFD00A85109 /* DiagonalRule.storyboard */; };
+		246E39F0247F73B400A85109 /* DiagonalRuleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246E39EF247F73B400A85109 /* DiagonalRuleVC.swift */; };
+		246E39F3247F74B500A85109 /* RuleOfSymmetry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246E39F2247F74B500A85109 /* RuleOfSymmetry.storyboard */; };
 		248857E0247E1AAC00295B9C /* FibonacciSpiral.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248857DF247E1AAC00295B9C /* FibonacciSpiral.storyboard */; };
 		248857E2247E1C4600295B9C /* FibonacciSpiralVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248857E1247E1C4600295B9C /* FibonacciSpiralVC.swift */; };
 		248857E4247E1FF500295B9C /* FSDefinitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248857E3247E1FF500295B9C /* FSDefinitionVC.swift */; };
@@ -47,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		240EC59C247F76A90079F0E4 /* RuleOfSymmetryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleOfSymmetryVC.swift; sourceTree = "<group>"; };
 		241B7E4D246E3B1C00267E6B /* GoldenTriangleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldenTriangleVC.swift; sourceTree = "<group>"; };
 		243D7DB0247CBD510035CF57 /* GTDefinitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTDefinitionVC.swift; sourceTree = "<group>"; };
 		243D7DB2247CBD650035CF57 /* GTHowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTHowVC.swift; sourceTree = "<group>"; };
@@ -65,6 +72,11 @@
 		244C999024684996009E5355 /* POV-CameraAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "POV-CameraAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		244C999424684996009E5355 /* POV_CameraAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POV_CameraAppUITests.swift; sourceTree = "<group>"; };
 		244C999624684996009E5355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		246E39E8247F584300A85109 /* ThePhiGrid.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThePhiGrid.storyboard; sourceTree = "<group>"; };
+		246E39EA247F588400A85109 /* ThePhiGridVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThePhiGridVC.swift; sourceTree = "<group>"; };
+		246E39ED247F6EFD00A85109 /* DiagonalRule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DiagonalRule.storyboard; sourceTree = "<group>"; };
+		246E39EF247F73B400A85109 /* DiagonalRuleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagonalRuleVC.swift; sourceTree = "<group>"; };
+		246E39F2247F74B500A85109 /* RuleOfSymmetry.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RuleOfSymmetry.storyboard; sourceTree = "<group>"; };
 		248857DF247E1AAC00295B9C /* FibonacciSpiral.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FibonacciSpiral.storyboard; sourceTree = "<group>"; };
 		248857E1247E1C4600295B9C /* FibonacciSpiralVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciSpiralVC.swift; sourceTree = "<group>"; };
 		248857E3247E1FF500295B9C /* FSDefinitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSDefinitionVC.swift; sourceTree = "<group>"; };
@@ -123,6 +135,9 @@
 		244C997124684995009E5355 /* POV-CameraApp */ = {
 			isa = PBXGroup;
 			children = (
+				246E39F1247F749C00A85109 /* RuleOfSymmetry */,
+				246E39EC247F6EE400A85109 /* DiagonalRule */,
+				246E39E7247F583500A85109 /* ThePhiGrid */,
 				248857E9247E25B700295B9C /* RuleOfThird */,
 				248857DE247E1A8F00295B9C /* FibonacciSpiral */,
 				24B232A02475096000B0B175 /* GoldenTriangle */,
@@ -153,6 +168,33 @@
 				244C999624684996009E5355 /* Info.plist */,
 			);
 			path = "POV-CameraAppUITests";
+			sourceTree = "<group>";
+		};
+		246E39E7247F583500A85109 /* ThePhiGrid */ = {
+			isa = PBXGroup;
+			children = (
+				246E39E8247F584300A85109 /* ThePhiGrid.storyboard */,
+				246E39EA247F588400A85109 /* ThePhiGridVC.swift */,
+			);
+			path = ThePhiGrid;
+			sourceTree = "<group>";
+		};
+		246E39EC247F6EE400A85109 /* DiagonalRule */ = {
+			isa = PBXGroup;
+			children = (
+				246E39ED247F6EFD00A85109 /* DiagonalRule.storyboard */,
+				246E39EF247F73B400A85109 /* DiagonalRuleVC.swift */,
+			);
+			path = DiagonalRule;
+			sourceTree = "<group>";
+		};
+		246E39F1247F749C00A85109 /* RuleOfSymmetry */ = {
+			isa = PBXGroup;
+			children = (
+				246E39F2247F74B500A85109 /* RuleOfSymmetry.storyboard */,
+				240EC59C247F76A90079F0E4 /* RuleOfSymmetryVC.swift */,
+			);
+			path = RuleOfSymmetry;
 			sourceTree = "<group>";
 		};
 		248857DE247E1A8F00295B9C /* FibonacciSpiral */ = {
@@ -297,6 +339,9 @@
 				244C997C24684996009E5355 /* Assets.xcassets in Resources */,
 				244C997A24684995009E5355 /* Main.storyboard in Resources */,
 				24C58A0B247264A7008091FC /* GoldenTriangle.storyboard in Resources */,
+				246E39EE247F6EFD00A85109 /* DiagonalRule.storyboard in Resources */,
+				246E39F3247F74B500A85109 /* RuleOfSymmetry.storyboard in Resources */,
+				246E39E9247F584300A85109 /* ThePhiGrid.storyboard in Resources */,
 				248857EB247E25C900295B9C /* RuleOfThird.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +367,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				246E39EB247F588400A85109 /* ThePhiGridVC.swift in Sources */,
+				240EC59D247F76A90079F0E4 /* RuleOfSymmetryVC.swift in Sources */,
 				243D7DB1247CBD510035CF57 /* GTDefinitionVC.swift in Sources */,
 				248857E8247E201700295B9C /* FSExampleVC.swift in Sources */,
 				244C997724684995009E5355 /* ViewController.swift in Sources */,
@@ -332,6 +379,7 @@
 				248857ED247E28B500295B9C /* RuleOfThirdVC.swift in Sources */,
 				241B7E4E246E3B1C00267E6B /* GoldenTriangleVC.swift in Sources */,
 				248857E4247E1FF500295B9C /* FSDefinitionVC.swift in Sources */,
+				246E39F0247F73B400A85109 /* DiagonalRuleVC.swift in Sources */,
 				244C997324684995009E5355 /* AppDelegate.swift in Sources */,
 				244C997524684995009E5355 /* SceneDelegate.swift in Sources */,
 			);
