@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     var frontCamera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front)
     var backCamera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
     var capturePhotoOutput: AVCapturePhotoOutput?
-    
+
     override var prefersStatusBarHidden: Bool {
         return true
     }
@@ -33,8 +33,10 @@ class ViewController: UIViewController {
                 let input = try AVCaptureDeviceInput(device: captureDevice!)
                 captureSession = AVCaptureSession()
                 captureSession.addInput(input)
+                captureSession.sessionPreset = .hd1920x1080
                 previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-                previewLayer.frame = view.layer.bounds
+                previewLayer.frame = view.frame
+                previewLayer.videoGravity = .resizeAspect
                 cameraView.layer.addSublayer(previewLayer)
                 captureSession.startRunning()
             }
@@ -68,8 +70,10 @@ class ViewController: UIViewController {
                 let input = try AVCaptureDeviceInput(device: captureDevice!)
                 captureSession = AVCaptureSession()
                 captureSession.addInput(input)
+                captureSession.sessionPreset = .hd1920x1080
                 previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-                previewLayer.frame = view.layer.bounds
+                previewLayer.frame = view.frame
+                previewLayer.videoGravity = .resizeAspect
                 cameraView.layer.addSublayer(previewLayer)
                 captureSession.startRunning()
             } catch {
@@ -86,8 +90,10 @@ class ViewController: UIViewController {
                 let input = try AVCaptureDeviceInput(device: captureDevice!)
                 captureSession = AVCaptureSession()
                 captureSession.addInput(input)
+                captureSession.sessionPreset = .hd1920x1080
                 previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-                previewLayer.frame = view.layer.bounds
+                previewLayer.frame = view.frame
+                previewLayer.videoGravity = .resizeAspect
                 cameraView.layer.addSublayer(previewLayer)
                 captureSession.startRunning()
             } catch {
@@ -110,6 +116,10 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func showGrid(_ sender: Any) {
+    }
+    
     
     @IBAction func showInfo(_ sender: UIButton) {
         
