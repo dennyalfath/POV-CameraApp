@@ -114,8 +114,6 @@ class ViewController: UIViewController {
     @IBAction func showInfo(_ sender: UIButton) {
         
     }
-    
-    
 }
 
 extension ViewController : AVCapturePhotoCaptureDelegate
